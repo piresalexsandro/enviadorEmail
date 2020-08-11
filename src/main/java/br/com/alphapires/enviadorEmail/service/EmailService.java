@@ -15,10 +15,10 @@ public class EmailService {
             Email email = new SimpleEmail();
             email.setHostName("smtp.googlemail.com");
             email.setSmtpPort(465);
-            email.setAuthenticator(new DefaultAuthenticator("allexsandro.pires@gmail.com", "xxxxxxxx"));
+            email.setAuthenticator(new DefaultAuthenticator("email", "password"));
             email.setSSLOnConnect(true);
 
-            email.setFrom("allexsandro.pires@gmail.com");
+            email.setFrom("email");
             email.setSubject("Você foi convidado pelo ListaVIP");
             email.setMsg("Olá " + nome + ". Você acaba de ser convidada(o) pelo ListaVIP.");
             email.addTo(emailDestinatario);
